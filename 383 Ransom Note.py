@@ -3,7 +3,7 @@ class Solution(object):
         """
         :type ransomNote: str
         :type magazine: str
-        :rtype: bool
+        :rtype: boolpython
         """
         # 如果ransomNote中的字母在magazine中，移除，不在返回False
         # flag = True
