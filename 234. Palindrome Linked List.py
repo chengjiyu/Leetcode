@@ -1,6 +1,6 @@
-# Given a linked list, determine if it has a cycle in it.
+# Given a singly linked list, determine if it is a palindrome.
 # Follow up:
-# Can you solve it without using extra space?
+# Could you do it in O(n) time and O(1) space?
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -8,7 +8,7 @@
 #         self.next = None
 
 class Solution(object):
-    def hasCycle(self, head):
+    def isPalindrome(self, head):
         """
         :type head: ListNode
         :rtype: bool
