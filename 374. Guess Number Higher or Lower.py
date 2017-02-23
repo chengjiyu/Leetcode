@@ -21,3 +21,19 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        left, right = 1, n
+        while True:
+            mid = (left + right) / 2
+            if guess(mid) == 1:
+                left = mid + 1
+            elif guess(num) == -1:
+                right = mid - 1
+            else:
+                return mid
+    # 递归
+        return self.guessIn(1, n)
+    def guessIn(self, left, right):
+        mid = (left + right) / 2
+        if guess(mid) == 0:
+            return mid
+        return self.guessIn(mid+1, right) if guess(mid) == 1 else self.guessIn(left, mid-1)

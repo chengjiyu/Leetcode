@@ -11,7 +11,8 @@ class Solution(object):
         :rtype: ListNode
         """
 
-        # 如果只有一个节点，直接返回。否则，将当前链表 a1,a2,...an 的子链表 a2,...an 进行逆转，返回逆转后的第一个节点的指针，再将 a1 节点加到 a2 节点后面
+        # 如果只有一个节点，直接返回。否则，将当前链表 a1,a2,...an 的子链表 a2,...an 进行逆转，
+        # 返回逆转后的第一个节点的指针，再将 a1 节点加到 a2 节点后面
         # if not head or not head.next:
         #     return head
         # else:

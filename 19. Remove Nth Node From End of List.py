@@ -19,3 +19,15 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
+        # 创建一个头节点，快慢指针法，快指针比慢指针多走n步，快指针指向最后一个元素时，
+        # 慢指针指向删除元素的前一个元素
+        p = ListNode(0)
+        p.next = head
+        fast, slow = p, p
+        for i in range(n):
+            fast = fast.next
+        while fast.next:
+            fast = fast.next
+            slow = slow.next
+        slow.next = slow.next.next
+        return p.next
