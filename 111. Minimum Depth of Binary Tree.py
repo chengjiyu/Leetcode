@@ -14,8 +14,8 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        # 一个节点的最小高度不一定是两个子树的最小高度中较小的，当一个子树为空时，
-        # 该节点的最小高度等于另一个子树的最小高度
+        # 一个节点的最小高度不一定是两个子树的最小高度中较小的，
+        # 当一个子树为空时，该节点的最小高度等于另一个子树的最小高度
         if root == None:
             return 0
         if not root.left:

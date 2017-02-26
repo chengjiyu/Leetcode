@@ -26,7 +26,7 @@ class Solution(object):
             mid = (left + right) / 2
             if guess(mid) == 1:
                 left = mid + 1
-            elif guess(num) == -1:
+            elif guess(mid) == -1:
                 right = mid - 1
             else:
                 return mid

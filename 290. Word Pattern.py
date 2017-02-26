@@ -17,10 +17,10 @@ class Solution(object):
         :type str: str
         :rtype: bool
         """
-        words = str.spilt(' ')
+        words = str.split(' ')
         if len(words) != len(pattern):
             return False
-        return map(words.find, words) == map(pattern.index, pattern)
+        return map(words.index, words) == map(pattern.index, pattern)
 
         return len(set(pattern)) == len(set(words)) == len(set(zip(pattern, words)))
 

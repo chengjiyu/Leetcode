@@ -17,7 +17,7 @@ class Solution(object):
             res += n
         return res
         # 递归
-        retrun 0 if n == 0 else n/5+self.trailingZeroes(n/5)
+        return 0 if n == 0 else n/5+self.trailingZeroes(n/5)
         num = self.fac(n)
         while num % 10 == 0:
             res += 1

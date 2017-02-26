@@ -10,9 +10,9 @@ class Solution(object):
         res = ""
         for i in range(len(strs[0])):
             for j in range(1,len(strs)):
-                if i >= len(strs[j]) or strs[j][i] != str[0][i]:
+                if i >= len(strs[j]) or strs[j][i] != strs[0][i]:
                     return res
-            res += str[0][i]
+            res += strs[0][i]
         return res
         # 先排序
         if not strs:

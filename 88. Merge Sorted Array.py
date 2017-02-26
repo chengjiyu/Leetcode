@@ -17,7 +17,7 @@ class Solution(object):
         p, q = m-1, n-1
         while p>=0 and q >= 0:
             if nums1[p]>nums2[q]:
-                nums1[m+n+1] = nums1[p]
+                nums1[p+q+1] = nums1[p]
                 p = p - 1
             else:
                 nums1[p+q+1] = nums2[q]

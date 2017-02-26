@@ -16,7 +16,7 @@ class Solution(object):
             if nums[i] in num_map and i - num_map[nums[i]] <= k:
                 return True
             else:
-                num_map[num[i]] = i
+                num_map[nums[i]] = i
         return False
         # 在遍历列表时维护集合， 集合保存当前元素前面k个元素，
         # 每次访问一个元素时判断是否在该集合中出现过
